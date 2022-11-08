@@ -41,19 +41,22 @@ body{
 /* 行間 */
 .field-item{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:flex-start;
     margin-bottom: 1.2rem;
+    flex-wrap: wrap;
 }
 
 
 /*ラベル*/
 .field-item label{
+    width: 15rem;
     font-size: 18px;
     font-weight: 700;
+    margin-top: 30px;
 }
 
 
-/* 必須欄  spanのみに適用*/
 .field-item label>span{
     margin-bottom: 0.5rem;
     background-color:#c7295677;
